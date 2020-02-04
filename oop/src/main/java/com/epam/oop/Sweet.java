@@ -38,11 +38,7 @@ public class Sweet implements Comparable<Sweet> {
 	
 	 @Override
 	    public String toString() {
-	        return "Sweets{" +
-	                "name='" + name + '\'' +
-	                ", price=" + price +
-	                ", weight=" + weight +
-	                '}';
+	        return '\'' + name + '\'' +", Price = Rs. " + price +", Weight = " + weight +"gms";
 	    }
 
 }
