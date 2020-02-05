@@ -2,28 +2,14 @@ package com.epam.oop;
 
 public class Sweet implements Comparable<Sweet> {
 
-	private String name;
-	private int price;
-	private int weight;
+	public String name;
+	public int price;
+	public int weight;
 	
 	public Sweet(String name,int price,int weight) {
-		
 		this.name = name;
 		this.price = price;
-		this.weight = weight;
-		
-	}
-	
-	public String getName(String name) {
-		return name;
-	}
-	
-	public int getPrice(int price) {
-		return price;
-	}
-	
-	public int getWeight(int weight) {
-		return weight;
+		this.weight = weight;	
 	}
 	
 	@Override
@@ -37,8 +23,8 @@ public class Sweet implements Comparable<Sweet> {
 	}
 	
 	 @Override
-	    public String toString() {
+	 public String toString() {
 	        return '\'' + name + '\'' +", Price = Rs. " + price +", Weight = " + weight +"gms";
-	    }
+    }
 
 }

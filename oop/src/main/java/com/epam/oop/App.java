@@ -2,7 +2,7 @@ package com.epam.oop;
 
 import java.util.*;
 
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
@@ -29,30 +29,33 @@ public class App
         	System.out.println("3 - Chocolates and Sweets");
         	System.out.println("4 - Exit");
         	System.out.print("Enter Your Choice : ");
+        	
         	option = in.nextInt();
         	switch(option)
         	{
-        		case 1: System.out.println("Chocolates Block Selected");
+        		case 1: System.out.println("\tChocolates Gift Box Selected");
         				ArrayList<Chocolate> arrayList = gift.getChocolates();
         				for (Chocolate c:arrayList) {
         					
         					System.out.println(c.toString());
         				
         				}
+        				System.out.println("Total Weight : " + gift.chocoWeight());
         				System.out.println();
         				break;
         				
-        		case 2: System.out.println("Sweets Block Selected");
+        		case 2: System.out.println("\tSweets Gift Block Selected");
         				ArrayList<Sweet> arrayList1 = gift.getSweets();
         				for (Sweet s:arrayList1){
         				
         					System.out.println(s.toString());
         				
         				}
+        				System.out.println("Total Weight : " + gift.sweetWeight());
         				System.out.println();
         				break;
         				
-        		case 3: System.out.println("Chocolates and Sweets Block Selected");
+        		case 3: System.out.println("\tChocolates and Sweets Gift Box Selected");
         				ArrayList<Chocolate> arrayList2 = gift.getChocolates();
         				ArrayList<Sweet> arrayList3 = gift.getSweets();
         				for (Chocolate c:arrayList2) {
@@ -66,14 +69,16 @@ public class App
         					System.out.println(s.toString());
         				
         				}
+        				System.out.println("Total Weight : " + (gift.chocoWeight() + gift.sweetWeight()) + "gms");
         				System.out.println();        				
         				break;
         	
-        		case 4: System.out.println("Thank You");
-        				System.out.println("Happy New Year"); 
+        		case 4: System.out.println("\t\tThank You!!! For Your Selection");
+        				System.out.println("\t\t%%%%%%%%%%Happy New Year%%%%%%%%%%"); 
         				break;
         				
         		default:System.out.println("Invalid Option");
+        				System.out.println("Please Try Again");
         				break;
         	}
         }while(option < 4);
