@@ -37,11 +37,7 @@ public class Chocolate implements Comparable<Chocolate> {
 
     @Override
     public String toString() {
-        return "Chocolate{" +
-                "Name = '" + name + '\'' +
-                ", Price = Rs." + price +
-                ", Weight = " + weight +
-                "gms}";
+        return "'" + name + "'" +", Price = Rs." + price +", Weight = " + weight +"gms";
     }
 
 }

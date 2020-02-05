@@ -23,10 +23,11 @@ public class App
     	
         do{
         	System.out.println("----------NEW YEAR GIFT----------");
-        	System.out.println("Select options for the Gift");
+        	System.out.println("Select options for your Gift");
         	System.out.println("1 - Only Chocolates");
         	System.out.println("2 - Only Sweets");
         	System.out.println("3 - Chocolates and Sweets");
+        	System.out.println("4 - Exit");
         	System.out.print("Enter Your Choice : ");
         	option = in.nextInt();
         	switch(option)
@@ -68,6 +69,10 @@ public class App
         				System.out.println();        				
         				break;
         	
+        		case 4: System.out.println("Thank You");
+        				System.out.println("Happy New Year"); 
+        				break;
+        				
         		default:System.out.println("Invalid Option");
         				break;
         	}
