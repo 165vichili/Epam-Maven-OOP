@@ -40,7 +40,8 @@ public class App
         					System.out.println(c.toString());
         				
         				}
-        				System.out.println("Total Weight : " + gift.chocoWeight());
+        				System.out.println("Total Weight : " + gift.chocoWeight() + "gms");
+        				System.out.println("Total Price : Rs. " + gift.chocoPrice());
         				System.out.println();
         				break;
         				
@@ -51,7 +52,8 @@ public class App
         					System.out.println(s.toString());
         				
         				}
-        				System.out.println("Total Weight : " + gift.sweetWeight());
+        				System.out.println("Total Weight : " + gift.sweetWeight() + "gms");
+        				System.out.println("Total Price : Rs. " + gift.sweetPrice());
         				System.out.println();
         				break;
         				
@@ -70,6 +72,7 @@ public class App
         				
         				}
         				System.out.println("Total Weight : " + (gift.chocoWeight() + gift.sweetWeight()) + "gms");
+        				System.out.println("Total Price : Rs. " + (gift.chocoPrice() + gift.sweetPrice()));
         				System.out.println();        				
         				break;
         	

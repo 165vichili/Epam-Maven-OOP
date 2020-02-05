@@ -33,14 +33,27 @@ public class Gift {
         for(Chocolate c: this.chocolates) 
             weight += c.weight;
         return weight;
-    }    
+    }
+    
+    public int chocoPrice(){
+    	int price = 0;
+        for(Chocolate c: this.chocolates) 
+            price += c.price;
+        return price;
+    }
     
     public int sweetWeight() {
     	int weight = 0;	
     	for(Sweet s: this.sweets)
             weight += s.weight;
         return weight;
+    }
     
+    public int sweetPrice() {
+    	int price = 0;	
+    	for(Sweet s: this.sweets)
+            price += s.price;
+        return price;
     }
 
 }
